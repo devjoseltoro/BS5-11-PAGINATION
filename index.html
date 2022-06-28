@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BS5 PAGINATION</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    /* body {
+      background: #ffe259;
+      background: url(img/marca-agua.png), linear-gradient(to right, rgb(255, 243, 81), #ffe259);
+    } */
+
+    body{
+        background: url(img/marca-agua.png);
+        background-color: rgb(246, 255, 81);
+        background-repeat: repeat;
+        background-size: 32%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="text-center p-2">
+    <img src="img/blogger.png" width="32" alt="">
+    <img src="img/dev.png" width="32" alt="">
+    <img src="img/dcoder.png" width="32" alt="">
+    <img src="img/github.png" width="32" alt="">
+    <img src="img/gumroad.png" width="32" alt="">
+    <img src="img/youtube.png" width="32" alt="">
+    <img src="img/twitter.png" width="32" alt="">
+    <img src="img/facebook.png" width="32" alt="">
+    <img src="img/instagram.png" width="32" alt="">
+    <img src="img/tiktok.png" width="32" alt="">
+    <br>
+    <span class="mt-5"> @joseltoro</span>
+  </div>
+
+  <!-- Paginación básica -->
+  <div class="container mt-3">
+    <h2>Paginación básica</h2>
+    <p>Para crear una paginación básica, agregue la clase .pagination a un elemento ul. Luego agregue el .page-item a
+      cada elemento li y una clase .page-link a cada enlace dentro de li:</p>
+    <ul class="pagination">
+      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+  </div>
+
+  <!-- Estado activo -->
+  <div class="container mt-3">
+    <h2>Paginación - Estado activo</h2>
+    <p>Agregue class .active para que el usuario sepa en qué página se encuentra:</p>
+    <ul class="pagination">
+      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item active"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+  </div>
+
+  <!-- Estado deshabilitado -->
+  <div class="container mt-3">
+    <h2>Paginación - Estado deshabilitado</h2>
+    <p>Agregue class .disabled si una página por alguna razón está deshabilitada:</p>
+    <ul class="pagination">
+      <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+  </div>
+
+  <!-- Tamaño de paginación -->
+  <div class="container mt-3">
+    <h2>Paginación - Dimensionamiento</h2>
+    <p>Agregue la clase .pagination-lg para bloques más grandes o .pagination-sm para bloques más pequeños.</p>
+
+    <p>Large:</p>
+    <ul class="pagination pagination-lg">
+      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+
+    <p>Default:</p>
+    <ul class="pagination">
+      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+
+    <p>Small:</p>
+    <ul class="pagination pagination-sm">
+      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+  </div>
+
+  <!-- Alineación de paginación -->
+  <div class="container mt-3">
+    <h2>Paginación - Alineación</h2>
+    <p>Use clases de utilidad para cambiar la alineación de la paginación:</p>
+    <ul class="pagination">
+      <li class="page-item"><a class="page-link" href="javascript:void(0);">Previous</a></li>
+      <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+      <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+      <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
+    </ul>
+    <ul class="pagination justify-content-center">
+      <li class="page-item"><a class="page-link" href="javascript:void(0);">Previous</a></li>
+      <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+      <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+      <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
+    </ul>
+    <ul class="pagination justify-content-end">
+      <li class="page-item"><a class="page-link" href="javascript:void(0);">Previous</a></li>
+      <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+      <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+      <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
+    </ul>
+  </div>
+
+  <!-- Breadcrumbs (Migas de pan) -->
+  <div class="container mt-3">
+    <h2>Breadcrumbs (Migas de pan)</h2>
+    <p>La clase .breadcrumb indica la ubicación de la página actual dentro de una jerarquía de navegación:</p>
+    <ul class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Photos</a></li>
+      <li class="breadcrumb-item"><a href="#">Summer 2017</a></li>
+      <li class="breadcrumb-item"><a href="#">Italy</a></li>
+      <li class="breadcrumb-item active">Rome</li>
+    </ul>
+  </div>
+
+</body>
+
+</html>
